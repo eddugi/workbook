@@ -1,0 +1,1 @@
+document.getElementById('one').innerHTML = '안녕할까요'
