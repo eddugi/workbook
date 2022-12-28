@@ -1,0 +1,24 @@
+
+
+.headerWrap {
+    
+}
+.navWrap {
+    background-color: antiquewhite;
+    height: 2vw;
+    display: flex
+}
+
+.navWrap .navgator {
+    
+
+}
+
+main .bannerBackground {
+    background-color: rgba(91, 91, 91, .5);
+    height: 300px;
+}
+
+.questionWrap {
+    display: flex;
+}
