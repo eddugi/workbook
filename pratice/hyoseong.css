@@ -1,0 +1,11 @@
+/* css 테크닉모음 */
+/* 가운데 정렬 테크닉 */
+.이름 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
