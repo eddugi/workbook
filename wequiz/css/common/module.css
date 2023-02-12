@@ -1,0 +1,37 @@
+/* Wequiz pesonal code convention */
+
+:root {
+  --main-color : #666666;
+  --font-colorB : #252525;
+  --font-colorW : #ffffff;
+  --btn-color : #0fa4d6;
+  --btn-colorHover : #2bbdee;
+}
+
+
+
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
+}
+
+.btn1 {
+  margin: 5px;
+  padding: 10px;
+  width: 120px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: var(--btn-color);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: var(--btn-colorHover);
+}

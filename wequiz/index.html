@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/common/reset.css">
+  <link rel="stylesheet" href="/css/common/common.css">
+  <link rel="stylesheet" href="/css/common/module.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="https://kit.fontawesome.com/e94ff56eb6.js" crossorigin="anonymous"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/publicdata.js"></script>
+  <script src="/js/includeHTML.js"></script>
+  <title>MenuBar</title>
+</head>
+<body id="bodyWrap">
+  <div include-html="header.html" class="headerWrap"></div>
+  
+  
+  <main>
+    <section class="bannerWrap">
+      <div>banner</div>
+    </section>
+    <section class="quizArea">
+      <form id="quizCheckStyle" action="">
+        <div class="quizWrap">
+          <div class="quizTitle">
+            <h3>Q : Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+            <div class="quizFunctionWrap">
+              <ul>
+                <li><i class="fa-regular fa-heart"></i></li>
+                <li>level : 1</li>
+                <li><font-awesome-icon icon="fa-sharp fa-regular fa-thumbtack" />
+              </ul>
+            </div>
+          </div>
+          <div id="quiz" class="quizView">
+            <div class="quizImg">
+              <img src="#" alt="img">
+            </div>
+            <ul>
+              <li><label for="viewFirst"><input id="viewFirst" type="radio" name="radio">1. Lorem ipsum dolor sit amet</input></label></li>
+              <li><label for="viewSecond"><input id="viewSecond" type="radio" name="radio">2. Lorem ipsum dolor sit amet</input></label></li>
+              <li><label for="viewThird"><input id="viewThird" type="radio" name="radio">3. Lorem ipsum dolor sit amet</input></label></li>
+              <li><label for="viewFourth"><input id="viewFourth" type="radio" name="radio">4. Lorem ipsum dolor sit amet</input></label></li>
+              <li><label for="viewFifth"><input id="viewFifth" type="radio" name="radio">5. Lorem ipsum dolor sit amet</input></label></li>
+            </ul>
+            
+            <div class="btnWrap" >
+              <button class="btn1">dddd</button>
+              <button class="btn1">dddd</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+<!-- 공공데이터 -->
+
+  
+
+  <script src="data/json/musicquiz.json" type="text/javascript"></script>
+  <script>
+      let testData = JSON.parse(JSON.stringify(musicquiz));
+      console.log(musicquiz);
+  </script>
+
+
+  <footer class="footerWrap">
+    <div class="footer">
+      
+    </div>
+  </footer>
+  
+  <script>includeHTML();</script>
+</body>
+</html>

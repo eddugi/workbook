@@ -1,0 +1,68 @@
+
+.bannerWrap div{
+  width: 100%;
+  height: 30vh;
+  background-color: var(--main-color);
+  box-shadow: 0 1px 5px 0 grey;
+}
+
+.quizArea {
+  margin: 0 auto;
+
+  width: 100%;
+  
+}
+
+.quizWrap {
+  margin: 0 auto;
+  width: 520px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 1px 5px 0 grey;
+}
+
+.quizTitle {
+  background-color: rgb(18, 18, 18);
+  padding: 10px;
+  display: flex;
+  border-radius: 10px 10px 0 0;
+  color: white;
+}
+
+.quizTitle .quizFunctionWrap {
+  text-align: center;
+  width: 80px;
+  line-height : 20px
+}
+
+.quizView {
+  width: 100%;
+  
+}
+
+.quizView li ul {
+  display: block;
+  width: 70%;
+  
+}
+
+.quizView li {
+  padding: 10px 0;
+}
+
+.quizView li:hover {
+  background-color: rgb(236, 236, 236);
+}
+
+.quizView .quizImg {  
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  background-color: grey;
+
+}
+
+.btnWrap {
+  justify-content: space-between;
+}
