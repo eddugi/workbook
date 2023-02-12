@@ -1,6 +1,8 @@
  {"musicquiz": [
   {
     "id" : 1,
+    "type" : "단답형",
+    "category" : "music",
     "quizTitle": "지식재산권 거래 플랫폼 아이피샵이 K-디아스포라 세계연대와 솔루션 공급을 위한 협약을 체결했다",
     "quizView" : [{
       "quizImg": "",
