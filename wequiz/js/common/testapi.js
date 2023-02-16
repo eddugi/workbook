@@ -29,3 +29,46 @@ var obj = { name: "ggmouse", age: "15" };
 for (variable in music_quiz_data) {
   console.log("key: " + variable + ", value: " + music_quiz_data[variable]);
 }
+
+var req = new XMLHttpRequest();
+
+// 비동기 방식으로 Request를 오픈한다
+req.open("GET", "/data/json/test.json", true);
+// Request를 전송한다
+req.send();
+
+req.onreadystatechange = function () {
+  // 서버 응답 완료 && 정상 응답
+  if (req.readyState === XMLHttpRequest.DONE) {
+    if (req.status == 200) {
+      console.log(req.responseText);
+
+      // Deserializing (String → Object)
+      responseObject = JSON.parse(req.responseText);
+
+      // JSON → HTML String
+      var newContent = "";
+      newContent += '<div id="tours">';
+      newContent += "<h1>Guided Tours</h1>";
+      newContent += "<ul>";
+      for (var i = 0; i < responseObject.tours.length; i++) {
+        newContent +=
+          '<li class="' + responseObject.tours[i].region + ' tour">';
+        newContent += "<h2>" + responseObject.tours[i].location + "</h2>";
+        newContent +=
+          '<span class="details">' +
+          responseObject.tours[i].details +
+          "</span>";
+        newContent += '<button class="book">Book Now</button>';
+        newContent += "</li>";
+      }
+      newContent += "</ul></div>";
+
+      document.getElementById("content").innerHTML = newContent;
+
+      // document.getElementById('content').insertAdjacentHTML('beforeend', newContent);
+    } else {
+      console.log("[" + req.status + "]: " + req.statusText);
+    }
+  }
+};

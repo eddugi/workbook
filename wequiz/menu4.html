@@ -1,77 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 공통 -->
+    <link rel="stylesheet" href="/css/common/reset.css" />
+    <link rel="stylesheet" href="/css/common/common.css" />
+    <link rel="stylesheet" href="/css/common/module.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/e94ff56eb6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/common/includeHTML.js"></script>
+    <!-- 개별 -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 공통 -->
-  <link rel="stylesheet" href="/css/common/reset.css">
-  <link rel="stylesheet" href="/css/common/common.css">
-  <link rel="stylesheet" href="/css/common/module.css">
-  <link rel="stylesheet" href="/css/main.css">
-  <script src="https://kit.fontawesome.com/e94ff56eb6.js" crossorigin="anonymous"></script>
-  <script src="/js/main.js"></script>
-  <script src="/js/common/includeHTML.js"></script>
-  <!-- 개별 -->
-  <script src="/js/common/testapi.js"></script>
+    <!-- <script src="/js/common/testapi.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-  <title>Menu4</title>
-</head>
+    <title>Menu4</title>
+  </head>
 
-<body>
-  <header include-html="header.html" class="headerWrap"></header>
-  <section class="bannerWrap">
-    <div>banner</div>
-  </section>
-  <h2>API 연습</h2>
+  <body>
+    <header include-html="header.html" class="headerWrap"></header>
+    <section class="bannerWrap">
+      <div style="text-align: center">banner</div>
+    </section>
 
+    <div class="foo">
+      <h1 id="main-heading">What is jQuery?</h1>
+      <p>jQuery is the most popular JavaScript library.</p>
+      <h1>Why should you learn jQuery?</h1>
+      <p class="note">
+        Note: jQuery functions use the DOM API (like
+        <code>document.getElementById</code>).
+      </p>
+    </div>
+    <br />
+    <hr />
 
-  <section class="quizArea">
-    <form id="quizCheckStyle" action="">
-      <div class="quizWrap">
-        <div class="quizTitle">
-          <h3>Q : </h3>
-          <div class="quizFunctionWrap">
-            <ul>
-              <li><i class="fa-regular fa-heart"></i></li>
-              <li>level : 1</li>
-              <li><font-awesome-icon icon="fa-sharp fa-regular fa-thumbtack" />
-            </ul>
-          </div>
+    <ul>
+      <li class="vacation">
+        <h2>Hawaiian Vacation</h2>
+        <button>Get Price</button>
+      </li>
+      <li class="vacation">
+        <h2>Orlando</h2>
+        <button>Get Price</button>
+      </li>
+    </ul>
+    <ul>
+      <li class="vacation">
+        <h2>Hawaiian Vacation</h2>
+        <button>Get Price</button>
+      </li>
+      <li class="vacation">
+        <h2>Orlando</h2>
+        <button>Get Price</button>
+      </li>
+    </ul>
+
+    <!-- QnA -->
+    <br />
+    <hr />
+    <section>
+      <article>
+        <h4>Q :문제 입니다</h4>
+        <div class="foo"></div>
+        <div>
+          <p>A : 답변입니다</p>
         </div>
-        <div id="quiz" class="quizView">
-          <div class="quizImg">
-            <img src="#" alt="img">
-          </div>
-          <ul>
-            <li><label for="viewFirst"><input id="viewFirst" type="radio" name="radio">1. Lorem ipsum dolor sit
-                amet</input></label></li>
-            <li><label for="viewSecond"><input id="viewSecond" type="radio" name="radio">2. Lorem ipsum dolor sit
-                amet</input></label></li>
-            <li><label for="viewThird"><input id="viewThird" type="radio" name="radio">3. Lorem ipsum dolor sit
-                amet</input></label></li>
-            <li><label for="viewFourth"><input id="viewFourth" type="radio" name="radio">4. Lorem ipsum dolor sit
-                amet</input></label></li>
-            <li><label for="viewFifth"><input id="viewFifth" type="radio" name="radio">5. Lorem ipsum dolor sit
-                amet</input></label></li>
-          </ul>
-
-          <div class="btnWrap">
-            <button onclick="window.alert('ㅇㅇ')" class="btn1">알럿창</button>
-            <button class="btn1">다음페이지</button>
-            <button class="btn1">풀이과정</button>
-            <button onclick="document.getElementById('print').innerHTML='innerHTML로 문구를 띄어주다'">출력</button>
-            </p>
-            <div id="print" style="border: 1px solid red;">여기에 출력</div>
-          </div>
-        </div>
-      </div>
-    </form>
-  </section>
-
-
-  <script>includeHTML();</script>
-</body>
-
+      </article>
+    </section>
+    <script src="/js/common/jquery.js"></script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
 </html>

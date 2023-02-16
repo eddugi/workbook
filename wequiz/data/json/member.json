@@ -1,26 +1,24 @@
-[
-  {
-     "name":"정수동",
-     "age":24,
-     "address":"서울시",
-     "height":181.1
-  },
-  {
-     "name":"심청",
-     "age":14,
-     "address":"강원시",
-     "height":155.4
-  },
-  {
-     "name":"향단",
-     "age":17,
-     "address":"남원시",
-     "height":159.2
-  },
-  {
-     "name":"이몽룡",
-     "age":18,
-     "address":"공주시",
-     "height":173.3
-  }
-]
+[{
+   "myname": "하잉",
+   "name": [{
+         "id": 24,
+         "nickname": "서울시",
+         "height": 181.1
+      },
+      {
+         "id": 11,
+         "nickname": "인천시",
+         "height": 181.1
+      },
+      {
+         "id": 55,
+         "nickname": "성남시",
+         "height": 181.1
+      },
+      {
+         "id": 23,
+         "nickname": "서울시",
+         "height": 181.1
+      }
+   ]
+}]

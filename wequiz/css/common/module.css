@@ -1,11 +1,11 @@
 /* Wequiz pesonal code convention */
 
 :root {
-  --main-color : #666666;
-  --font-colorB : #252525;
-  --font-colorW : #ffffff;
-  --btn-color : #0fa4d6;
-  --btn-colorHover : #2bbdee;
+  --main-color: #666666;
+  --font-colorB: #252525;
+  --font-colorW: #ffffff;
+  --btn-color: #0fa4d6;
+  --btn-colorHover: #609baf;
 }
 
 
@@ -13,25 +13,45 @@
 h1 {
   font-size: 36px;
 }
+
 h2 {
   font-size: 28px;
 }
+
 h3 {
   font-size: 24px;
 }
 
-.btn1 {
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
   margin: 5px;
-  padding: 10px;
-  width: 120px;
-  font-size: 1.1rem;
-  color: white;
-  background-color: var(--btn-color);
-  border-radius: 5px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
+  color: #fff;
+  background-color: var(--btn-color);
 }
 
-.btn1:hover {
+.btn-large {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: .7rem 2rem;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--btn-color);
+}
+
+.btn:hover {
+  background-color: var(--btn-colorHover);
+}
+
+.btn-large:hover {
   background-color: var(--btn-colorHover);
 }
