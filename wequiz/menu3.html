@@ -26,184 +26,108 @@
   </head>
   <body>
     <header include-html="header.html" class="headerWrap"></header>
-    <section class="bannerWrap">
-      <div>banner</div>
-    </section>
-    <section>
+    <section class="bannerWrap"><div>banner</div></section>
+    <!-- https://blog.naver.com/comalone/222825716510 -->
+    <section class="container text-center">
       <div class="row">
-        <div class="card card-margin search-form">
-          <div class="card-body p-0">
-            <form id="search-form">
-              <div class="row">
-                <div class="col-12">
-                  <div class="row no-gutters">
-                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                      <label for="search-type" hidden>검색 유형</label>
-                      <select
-                        class="form-control"
-                        id="search-type"
-                        name="searchType"
-                      >
-                        <option>제목</option>
-                        <option>본문</option>
-                        <option>id</option>
-                        <option>닉네임</option>
-                        <option>해시태그</option>
-                      </select>
-                    </div>
-                    <div class="col-lg-8 col-md-6 col-sm-12 p-0">
-                      <label for="search-value" hidden>검색어</label>
-                      <input
-                        type="text"
-                        placeholder="검색어..."
-                        class="form-control"
-                        id="search-value"
-                        name="searchValue"
-                      />
-                    </div>
-                    <div class="col-lg-1 col-md-3 col-sm-12 p-0">
-                      <button type="submit" class="btn btn-base">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          class="feather feather-search"
-                        >
-                          <circle cx="11" cy="11" r="8"></circle>
-                          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
+        <div class="col-lg-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Title</th>
+                <th scope="col">Contents</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </div>
-
-      <div class="row">
-        <table class="table" id="article-table">
-          <thead>
-            <tr>
-              <th class="title col-6"><a>제목</a></th>
-              <th class="hashtag col-2"><a>해시태그</a></th>
-              <th class="user-id"><a>작성자</a></th>
-              <th class="created-at"><a>작성일</a></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="title"><a>첫글</a></td>
-              <td class="hashtag">#java</td>
-              <td class="user-id">Uno</td>
-              <td class="created-at">
-                <time>2022-01-01</time>
-              </td>
-            </tr>
-            <tr>
-              <td>두번째글</td>
-              <td>#spring</td>
-              <td>Uno</td>
-              <td>
-                <time>2022-01-02</time>
-              </td>
-            </tr>
-            <tr>
-              <td>세번째글</td>
-              <td>#java</td>
-              <td>Uno</td>
-              <td>
-                <time>2022-01-03</time>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="row">
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-          <a class="btn btn-primary me-md-2" role="button" id="write-article"
-            >글쓰기</a
-          >
-        </div>
-      </div>
-
-      <div class="row">
-        <nav id="pagination" aria-label="Page navigation">
-          <ul class="pagination justify-content-center">
-            <li class="page-item">
-              <a class="page-link" href="#">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
-        </nav>
       </div>
     </section>
     <section>
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne"
-              aria-expanded="false"
-              aria-controls="flush-collapseOne"
-            >
-              Accordion Item #1
-            </button>
-          </h2>
-          <div
-            id="flush-collapseOne"
-            class="accordion-collapse collapse"
-            aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              first item's accordion body.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTwo"
-              aria-expanded="false"
-              aria-controls="flush-collapseTwo"
-            >
-              Accordion Item #2
-            </button>
-          </h2>
-          <div
-            id="flush-collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="flush-headingTwo"
-            data-bs-parent="#accordionFlushExample"
-          >
-            <div class="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              second item's accordion body. Let's imagine this being filled with
-              some actual content.
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="map" style="width: 80%; height: 80vh; margin: 0 auto"></div>
     </section>
+    <script
+      type="text/javascript"
+      src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=4f66150b182f5d72949377937580dc83&libraries=clusterer"
+    ></script>
+    <script>
+      const url =
+        "https://api.odcloud.kr/api/15077586/v1/centers?page=1&perPage=10&serviceKey=tFwL%2FWQhmOt0VtMKqrGETyKsPGhkkiVBb8%2Fx%2BstTyQ%2F9SRVb4s6wD1HlMbsUOIhbm7bedx5dStmFPFAeZ2FAqg%3D%3D";
+
+      // 인포윈도우를 표시하는 클로저를 만드는 함수입니다
+      function makeOverListener(map, marker, infowindow) {
+        return function () {
+          infowindow.open(map, marker);
+        };
+      }
+
+      // 인포윈도우를 닫는 클로저를 만드는 함수입니다
+      function makeOutListener(infowindow) {
+        return function () {
+          infowindow.close();
+        };
+      }
+
+      var mapContainer = document.getElementById("map"), // 지도를 표시할 div
+        mapOption = {
+          center: new kakao.maps.LatLng(37.60504, 127.05591), // 지도의 중심좌표
+          level: 3, // 지도의 확대 레벨
+        };
+
+      var map = new kakao.maps.Map(mapContainer, mapOption);
+
+      var clusterer = new kakao.maps.MarkerClusterer({
+        map: map, // 마커들을 클러스터로 관리하고 표시할 지도 객체
+        averageCenter: true, // 클러스터에 포함된 마커들의 평균 위치를 클러스터 마커 위치로 설정
+        minLevel: 5, // 클러스터 할 최소 지도 레벨
+      });
+
+      fetch(url)
+        .then((res) => res.json())
+        .then((myJson) => {
+          var markers = [];
+          const stores = myJson.data;
+          console.log(JSON.stringify(myJson, null, 1));
+
+          console.log(stores);
+          for (var i = 0; i < stores.length; i++) {
+            var marker = new kakao.maps.Marker({
+              position: new kakao.maps.LatLng(
+                stores[i]["lat"],
+                stores[i]["lng"]
+              ),
+              map: map,
+            });
+
+            var infowindow = new kakao.maps.InfoWindow({
+              content: stores[i]["centerName"],
+            });
+
+            markers.push(marker);
+
+            kakao.maps.event.addListener(
+              marker,
+              "mouseover",
+              makeOverListener(map, marker, infowindow)
+            );
+            kakao.maps.event.addListener(
+              marker,
+              "mouseout",
+              makeOutListener(infowindow)
+            );
+          }
+
+          clusterer.addMarkers(markers);
+        });
+    </script>
+
     <script>
       includeHTML();
     </script>

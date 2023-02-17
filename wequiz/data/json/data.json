@@ -1,0 +1,27 @@
+[{
+   "items": [{
+         "type": "tshirt",
+         "gender": "female",
+         "size": "large",
+         "color": "pink"
+      },
+      {
+         "type": "바지",
+         "gender": "남자",
+         "size": "large",
+         "color": "blue"
+      },
+      {
+         "type": "상의",
+         "gender": "female",
+         "size": "large",
+         "color": "red"
+      },
+      {
+         "type": "tshirt",
+         "gender": "female",
+         "size": "large",
+         "color": "pink"
+      }
+   ]
+}]
