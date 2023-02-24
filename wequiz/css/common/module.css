@@ -55,3 +55,7 @@ h3 {
 .btn-large:hover {
   background-color: var(--btn-colorHover);
 }
+
+.hidden {
+  display: none;
+}
